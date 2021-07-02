@@ -4,3 +4,4 @@ INTEGRANTES:
 
 - Rodrigo Calle
 - Daniel Santillán
+- Juan de Dios Quiroz
