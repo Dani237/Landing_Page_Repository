@@ -1,1 +1,1 @@
-# Landing_Page_Repository
+# Landing_Page_Repository for AcadeMeet
