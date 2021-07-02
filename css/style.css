@@ -1,0 +1,439 @@
+:root {
+  --primario: #5F74FF;
+  --secundario: #000000;
+  --secuntarioOscuro:#939393;
+  --blanco: #FFF;
+  --gray: #ababab;
+
+  --fuentePrincipal: 'Rubik', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--fuentePrincipal);
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+* {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.6;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  color: var(--secuntarioOscuro);
+  margin-top: 6rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* UTILITIES */
+.no-margin {
+  margin: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.center {
+  text-align: center;
+}
+.container {
+  max-width: min(90%, 120rem);
+  margin: 0 auto;
+}
+.img-size1 {
+  width: 50rem;
+}
+
+
+/* BUTTONS */
+.button {
+  border: none;
+  color: var(--blanco);
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: .5rem 3rem;
+}
+
+@media (min-width: 760px) {
+  .button {
+    display: inline-block;
+  }
+}
+
+.primary-button {
+  background-color: var(--primario);
+}
+.secondary-button {
+  background-color: var(--secundario);
+}
+.huge-button {
+  width: 35rem;
+  padding: 4rem 0;
+  transition: all .9s ease;
+}
+
+.huge-button:hover {
+  transform:scale(1.05);
+}
+
+
+/* HEADER */
+
+.header {
+  background: url(../img/hero.jpg) no-repeat;
+  height: 60rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nav-bar a  {
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  transform:scale(1.05);
+}
+
+
+
+
+.logo, .nav-bar a {
+  color: var(--blanco);
+}
+
+
+.header-top {
+  padding-top: 1rem;
+}
+.logo {
+  transition: all 1s ease;
+}
+
+
+
+@media (min-width: 760px) {
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar {
+    display: flex;
+    gap: 4rem;
+  }
+
+}
+
+.nav__rute {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.header-text {
+  text-align: center;
+  color: var(--blanco);
+  width: 40rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+/* HOME */
+
+.main {
+  background-color: var(--secundario);
+  margin-top: 10rem;
+  color: white;
+  padding: 5rem 2rem;
+}
+
+.content {
+  display: flex;
+  gap: 4rem;
+}
+
+.content-img {
+  width: 100rem;
+}
+
+@media (max-width: 760px) {
+  .content {
+    flex-direction: column;
+  }
+  .content-img {
+    width: 100%;
+  }
+}
+
+.about-the-prodcut, .about-the-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+iframe {
+  width: 80rem;
+  height: 40rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 9rem;
+  justify-content: center;
+  margin-top: 7rem;
+  margin-bottom: 12rem;
+}
+@media (max-width: 760px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    max-width: 50rem;
+  }
+}
+
+.buttons a {
+  font-size: 3.2rem;
+}
+
+
+/* ABOUT */
+
+.about-text {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+/* CONTACT */
+
+.form-bg {
+  background: url(../img/clases.jpg) no-repeat;
+  background-size: cover;
+  height: 44rem;
+}
+
+.form {
+  background: var(--blanco);
+  margin: -5rem auto 0 auto;
+  padding: 5rem;
+  width: 92%;
+}
+
+.camp {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.camp__label {
+  flex: 0 0 9rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+.camp__field {
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  flex: 1;
+}
+.camp__field__text {
+  height: 20rem;
+}
+
+/* STUDENT */
+
+.sub-title {
+  padding-bottom: 10rem;
+}
+.box-1 {
+  background-color: var(--primario);
+  color: white;
+  padding: 5rem 14rem;
+}
+.box-2 {
+  background-color: var(--blanco);
+  color: var(--secundario);
+  padding: 5rem 14rem;
+  text-align: right;
+}
+.feature1 {
+  display: flex;
+  gap: 4rem;
+}
+.feature2 {
+  display: flex;
+  gap: 4rem;
+}
+.feature-img img {
+  border-radius: 15px;
+}
+.feature-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+}
+.feature-info h3 {
+  font-size: 3.5rem;
+}
+.feature-info p {
+  font-size: 2rem;
+}
+@media (max-width: 760px) {
+  .feature1 {
+    flex-direction: column;
+  }
+  .img-size1 {
+    width: 100%
+  }
+  .box-1, .box-2 {
+    padding: 5rem 1rem;
+  }
+  .feature2 {
+    flex-direction: column-reverse;
+  }
+  .feature1, .feature2 {
+    padding-top: 0;
+  }
+}
+
+.plans-info {
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+}
+.plan-size {
+  max-width: 28rem;
+  padding: 2rem 2.5rem;
+  border: 3px solid var(--primario);
+  border-radius: 3rem;
+  text-align: center;
+}
+.plan-size ul li {
+  list-style: disc;
+}
+@media (max-width: 760px) {
+  .plans-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.price {
+  color: var(--primario);
+  font-style: italic;
+}
+
+.plans-request {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+
+/* TUTOR */
+
+.box-1b {
+  background-color: var(--secundario);
+  color: white;
+  padding: 5rem 14rem;
+}
+.box-2b {
+  background-color: var(--blanco);
+  color: black;
+  padding: 5rem 14rem;
+}
+.request {
+  padding-top: 1rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.title-request {
+  color: var(--blanco);
+}
+.text-request {
+  color: var(--secuntarioOscuro);
+}
+@media (max-width: 760px) {
+   .box-1b, .box-2b {
+     padding: 5rem 2rem;
+   }
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-color: var(--secuntarioOscuro);
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+  color: var(--blanco);
+}
+
+.sides {
+  display: flex;
+  justify-content: space-between;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.social-media img {
+  width: 2.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 760px) {
+  .sides {
+    flex-direction: column;
+    align-items: center;
+  }
+  div ul li {
+    text-align: center;
+    margin: 0;
+  }
+  .nav-side ul {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+footer h4 {
+  text-align: center;
+}
